@@ -3,58 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Pandas - Learn About These Adorable Creatures</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Red Pandas</title>
+    <style>
+        .dropdown {
+            margin: 10px 0;
+        }
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .expandable {
+            cursor: pointer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+    <script>
+        function toggleDropdown(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <h1>🐼 Red Pandas 🐼</h1>
-        <p class="tagline">Discover the Wonder of Nature's Cutest Creatures</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#facts">Fun Facts</a></li>
-            <li><a href="#conservation information">Conservation</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="about">
-            <h2>About Red Pandas</h2>
-            <p>Red pandas are small tree-dwelling mammals native to the mountainous regions of the eastern Himalayas and southwestern China. These adorable creatures are known for their distinctive reddish-brown fur, white face markings, and fluffy tails.</p>
-            <p>Despite their name, red pandas are not closely related to giant pandas. They are the only living members of their subfamily, Ailurinae.</p>
-        </section>
-
-        <section id="facts">
-            <h2>Fun Facts About Red Pandas</h2>
-            <ul class="facts-list">
-                <li><strong>Size:</strong> Red pandas are about the size of a house cat, weighing 8-17 pounds</li>
-                <li><strong>Diet:</strong> They primarily eat bamboo, but also consume fruits, insects, and small animals</li>
-                <li><strong>Tail:</strong> Their fluffy tails help them balance in trees and keep warm</li>
-                <li><strong>Lifespan:</strong> In the wild, they live about 8-10 years; in captivity, up to 14 years</li>
-                <li><strong>Sound:</strong> They communicate using chirps, squeaks, and hisses</li>
-                <li><strong>Climbing:</strong> They have semi-retractable claws that help them climb trees</li>
-                <li><strong>Sleep:</strong> Red pandas sleep 16+ hours a day in a curled position</li>
-            </ul>
-        </section>
-
-        <section id="conservation">
-            <h2>Conservation Status</h2>
-            <p>Red pandas are listed as <strong>Vulnerable</strong> on the IUCN Red List. The primary threats to their survival include:</p>
-            <ul>
-                <li>Habitat loss due to deforestation</li>
-                <li>Fragmentation of their forest homes</li>
-                <li>Climate change affecting their bamboo food sources</li>
-                <li>Illegal pet trade</li>
-            </ul>
-            <p>Several conservation organizations are working to protect red pandas and their habitats. If you love red pandas, consider supporting these efforts!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Red Pandas Educational Website. Made with ❤️ for red panda lovers everywhere.</p>
-    </footer>
+    <h1>Fun Facts About Red Pandas</h1>
+    <div class="dropdown">
+        <div class="expandable" onclick="toggleDropdown('dietDropdown')">What Do Red Pandas Eat?</div>
+        <div class="dropdown-content" id="dietDropdown">
+            <h3>Bamboo</h3>
+            <p>Red pandas primarily eat bamboo, which makes up most of their diet. They can consume up to 20,000 leaves a day.</p>
+            <h3>Fruits</h3>
+            <p>In addition to bamboo, red pandas enjoy various fruits, including apples, berries, and bananas.</p>
+            <h3>Insects</h3>
+            <p>Red pandas also eat insects such as termites, ants, and grubs.</p>
+            <h3>Small Animals</h3>
+            <p>Occasionally, red pandas may hunt small animals, including birds and rodents.</p>
+        </div>
+    </div>
+    <ul>
+        <li>They are nocturnal animals.</li>
+        <li>Red pandas can climb trees with ease.</li>
+        <li>They have a special wrist bone that acts like a thumb.</li>
+    </ul>
 </body>
-</html>
+</html>         
