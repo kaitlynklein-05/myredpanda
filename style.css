@@ -5,36 +5,41 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Poppins', 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #1a1a1a;
+    background-color: #f8f9fa;
 }
 
 header {
-    background: linear-gradient(135deg, #d4483e 0%, #8b3a2c 100%);
+    background: linear-gradient(135deg, #dc3545 0%, #0d47a1 100%);
     color: white;
     padding: 40px 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .tagline {
     font-size: 1.2em;
     font-style: italic;
+    font-weight: 300;
+    opacity: 0.95;
 }
 
 nav {
-    background-color: #333;
+    background-color: #1a1a1a;
     padding: 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -49,11 +54,14 @@ nav a {
     color: white;
     padding: 15px 20px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 nav a:hover {
-    background-color: #d4483e;
+    background-color: #dc3545;
+    transform: translateY(-2px);
 }
 
 main {
@@ -66,20 +74,25 @@ section {
     background: white;
     padding: 30px;
     margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #dc3545;
 }
 
 h2 {
-    color: #d4483e;
+    color: #dc3545;
     margin-bottom: 15px;
     font-size: 2em;
-    border-bottom: 3px solid #d4483e;
+    font-weight: 700;
+    border-bottom: 3px solid #0d47a1;
     padding-bottom: 10px;
+    letter-spacing: 0.5px;
 }
 
 section p {
     margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .facts-list {
@@ -88,16 +101,32 @@ section p {
 }
 
 .facts-list li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding-left: 10px;
+    padding: 12px 15px;
+    background-color: #f0f3ff;
+    border-left: 4px solid #0d47a1;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.facts-list li:hover {
+    background-color: #e8ecff;
+    transform: translateX(5px);
+}
+
+.facts-list strong {
+    color: #dc3545;
+    font-weight: 600;
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d47a1 100%);
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    font-weight: 500;
 }
 
 @media (max-width: 600px) {
@@ -115,5 +144,9 @@ footer {
 
     section {
         padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
     }
 }
